@@ -1,0 +1,394 @@
+\documentclass[10pt]{article}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+%%configuration de listings
+\lstset{
+language=XML,
+basicstyle=\ttfamily\small, %
+%identifierstyle=\color{red}, %
+keywordstyle=\color{blue}, %
+%stringstyle=\color{black!60}, %
+commentstyle=\it\color{green!95!yellow!1}, %
+columns=flexible, %
+tabsize=2, %
+extendedchars=true, %
+showspaces=false, %
+showstringspaces=false, %
+numbers=left, %
+numberstyle=\tiny, %
+breaklines=true, %
+breakautoindent=true, %
+captionpos=b
+}
+
+\usepackage{xcolor}
+
+\definecolor{Zgris}{rgb}{0.87,0.85,0.85}
+
+\newsavebox{\BBbox}
+\newenvironment{DDbox}[1]{
+\begin{lrbox}{\BBbox}\begin{minipage}{\linewidth}}
+{\end{minipage}\end{lrbox}\noindent\colorbox{white}{\usebox{\BBbox}} \\
+[.5cm]}
+\title{HLIN103 - Presentation des données du Web\\TD1}
+\author{Meryll \textsc{Essig} & Tamara \textsc{Rocacher}}
+\begin{document}
+\maketitle
+
+\section{Question 1:}
+\begin{multicols}{2}
+  \subsection{DTD1 Arbre 1}
+
+
+  \begin{DDbox}{0.4}
+  \begin{lstlisting}
+
+  <presse>
+    <journal>
+      <article titre="Hey" auteur="01">
+        <corps>
+  	     Texte de l'article.
+        </corps>
+      </article>
+    </journal>
+    <journalistes>
+      <journaliste idJ="01">
+        <nom>Michel</nom>
+        <prenom>Michel</prenom>
+      </journaliste>
+    </journalistes>
+  </presse>
+
+  \end{lstlisting}
+  \end{DDbox}
+
+  \subsection{DTD1 Arbre 2}
+
+
+
+  \begin{DDbox}{0.4}
+  \begin{lstlisting}
+
+  <presse>
+    <journal>
+      <article titre="lel" auteur="06">
+        <corps>
+  	     Texte de l'article.
+        </corps>
+      </article>
+    </journal>
+    <journalistes>
+      <journaliste idJ="06">
+        <anonyme />
+      </journaliste>
+      <journaliste>
+        <pseudonyme>Michou</pseudonyme>
+      </journaliste>
+    </journalistes>
+  </presse>
+
+  \end{lstlisting}
+  \end{DDbox}
+\end{multicols}
+\newpage
+\begin{multicols}{2}
+  \subsection{DTD2 Arbre 1}
+
+
+
+  \begin{DDbox}{\linewidth}
+  \begin{lstlisting}
+
+  <batiment>
+    <etage>
+      <description>
+        Etage du boss.
+      </description>
+      <bureau>
+        <code>0160</code>
+        <personne>CEO</personne>
+      </bureau>
+    </etage>
+  </batiment>
+
+
+  \end{lstlisting}
+  \end{DDbox}
+\subsection{DTD2 Arbre 2}
+
+
+
+\begin{DDbox}{\linewidth}
+\begin{lstlisting}
+
+  <batiment>
+    <etage>
+      <description>
+        Etage du personnel.
+      </description>
+      <bureau>
+        <code>002</code>
+      </bureau>
+      <salle>
+        <nombrePlaces>10</nombrePlaces>
+      </salle>
+      <salle>
+        <nombrePlaces>15</nombrePlaces>
+      </salle>
+    </etage>
+  </batiment>
+
+  \end{lstlisting}
+  \end{DDbox}
+\end{multicols}
+  \section{QUESTION 2 :}
+
+\begin{multicols}{2}
+
+\subsection{XML 1 :}
+
+
+    \begin{DDbox}{\linewidth}
+    \begin{lstlisting}
+
+  <!DOCTYPE C [
+  <!ELEMENT C (A|B|C)*>
+  <!ELEMENT A EMPTY>
+  <!ELEMENT B EMPTY>
+  ]>
+
+  <!DOCTYPE C [
+  <!ELEMENT C (B | (B, A) |C)*>
+  <!ELEMENT A EMPTY>
+  <!ELEMENT B EMPTY>
+  ]>
+
+  \end{lstlisting}
+  \end{DDbox}
+
+  \subsection{XML 2 :}
+
+
+    \begin{DDbox}{\linewidth}
+    \begin{lstlisting}
+
+  <!DOCTYPE C [
+  <!ELEMENT C (A|B|C|D)*>
+  <!ELEMENT A EMPTY>
+  <!ELEMENT B EMPTY>
+  <!ELEMENT D EMPTY>
+  ]>
+
+  <!DOCTYPE C [
+  <!ELEMENT C (B|C|D| (C,A) | (D,A) )*>
+  <!ELEMENT A EMPTY>
+  <!ELEMENT B EMPTY>
+  <!ELEMENT D EMPTY>
+  ]>
+\end{lstlisting}
+\end{DDbox}
+
+\end{multicols}
+  \begin{multicols}{2}
+
+\subsection{XML 3 :}
+
+\begin{DDbox}{\linewidth}
+\begin{lstlisting}
+
+<!DOCTYPE C [
+<!ELEMENT C (B*, C*, B)>
+]>
+
+<!DOCTYPE C [
+<!ELEMENT C (B*| C*)*>
+]>
+\end{lstlisting}
+\end{DDbox}
+
+
+\subsection{XML 4 :}
+
+\begin{DDbox}{\linewidth}
+\begin{lstlisting}
+
+<!DOCTYPE C [
+<!ELEMENT C (B*,C*|A|D)>
+<!ELEMENT B (A|D)>
+]>
+
+<!DOCTYPE C [
+<!ELEMENT C (B|C)*|(A|D)>
+<!ELEMENT B (A|D)*>
+]>
+\end{lstlisting}
+\end{DDbox}
+
+
+\end{multicols}
+  \begin{multicols}{2}
+
+  \subsection{XML 5 :}
+
+  \begin{DDbox}{\linewidth}
+  \begin{lstlisting}
+
+  <!DOCTYPE C [
+  <!ELEMENT C EMPTY>
+  ]>
+
+  <!DOCTYPE C [
+  <!ELEMENT C (B*)>
+  ]>
+\end{lstlisting}
+\end{DDbox}
+
+\subsection{XML 6 :}
+
+\begin{DDbox}{\linewidth}
+\begin{lstlisting}
+
+  <!DOCTYPE C [
+  <!ELEMENT C B*>
+  <!ELEMENT B #PCDATA>
+  <!ATTLIST B id ID #REQUIRED>
+  <!ATTLIST B friend #IMPLIED>
+  ]>
+
+  <!DOCTYPE C [
+  <!ELEMENT C B+>
+  <!ELEMENT B #PCDATA>
+  <!ATTLIST B id #IMPLIED>
+  <!ATTLIST B friend #REQUIRED>
+  ]>
+\end{lstlisting}
+\end{DDbox}
+\end{multicols}
+  \section{QUESTION 3 :}
+
+
+
+
+
+\begin{DDbox}{\linewidth}
+\begin{lstlisting}
+<!DOCTYPE Tweet [
+<!ELEMENT Tweet (Corps, Loc, Syst, UrlCont*)>
+<!ATTLIST Tweet idT ID #REQUIRED>
+<!ATTLIST Tweet userId IDREF #REQUIRED>
+<!ATTLIST Tweet userProfil CDATA #REQUIRED>
+<!ATTLIST Tweet userName PCDATA #REQUIRED>
+<!ATTLIST Tweet date CDATA #REQUIRED>
+<!ATTLIST Tweet fuseau CDATA #REQUIRED>
+<!ATTLIST Tweet rt CDATA #IMPLIED>
+<!ATTLIST Tweet idRep IDREF #IMPLIED>
+
+
+<!ELEMENT  Corps (#PCDATA | Hashtag | URef)*>
+<!ATTLIST Corps langue PCDATA #REQUIRED>
+<!ATTLIST Corps taille PCDATA #REQUIRED>
+<!ATTLIST Corps type PCDATA #REQUIRED>
+<!ATTLIST Corps couleur PCDATA #REQUIRED>
+<!ELEMENT Hashtag #CDATA>
+<!ELEMENT URef #CDATA>
+
+<!ELEMENT Loc (Coord, Ville, Pays)>
+<!ELEMENT  Coord EMPTY>
+<!ATTLIST Coord Lat CDATA #REQUIRED>
+<!ATTLIST Coord Long CDATA #IMPLIED>
+<!ELEMENT Ville #PCDATA>
+<!ELEMENT Pays #PCDATA>
+
+<!ELEMENT Syst #PCDATA>
+<!ATTLIST Syst Browser PCDATA #IMPLIED>
+
+<!ELEMENT UrlCont #PCDATA>
+]>
+
+<!DOCTYPE User [
+<!ELEMENT User (Name, Descript, Pict)>
+<!ATTLIST User Url CDATA #REQUIRED>
+<!ATTLIST User IdU ID #REQUIRED
+<!ATTLIST User abo PCDATA #REQUIRED>
+<!ATTLIST User suiv PCDATA #REQUIRED>
+
+<!ELEMENT Name #PCDATA>
+<!ELEMENT Descript #PCDATA>
+<!ELEMENT Pict #CDATA)>
+<!ATTLIST Pict taille PCDATA #REQUIRED>
+]>
+\end{lstlisting}
+\end{DDbox}
+
+\section{QUESTION 5 :}
+\subsection{DTD 1:}
+L'élément C est décrit deux fois, la DTD est donc invalide.
+\subsection{DTD 2:}
+\begin{DDbox}{\linewidth}
+\begin{lstlisting}
+<EMPTY />
+\end{lstlisting}
+\end{DDbox}
+La DTD ne peut pas être vide, elle a donc un premier élément nommé EMPTY, qui est vide.
+\subsection{DTD 3:}
+Cette DTD donne lieu à un arbre récursif, donc infini, car l'élément A appel l'élément B et l'élément B rappel A.\\
+\begin{DDbox}{\linewidth}
+\begin{lstlisting}
+<A>
+  <B>
+    <A>
+      <B>
+      ...
+      </B>
+    </A>
+  </B>
+</A>
+\end{lstlisting}
+\end{DDbox}
+Il faudrait décrire un des deux élément avec une fin, donc possiblement sans sous-élément:\\
+\begin{DDbox}{\linewidth}
+\begin{lstlisting}
+
+<! ELEMENT A (B*) >
+ou
+<! ELEMENT B (A*) >
+
+\end{lstlisting}
+\end{DDbox}
+
+\subsection{DTD 4:}
+\begin{DDbox}{\linewidth}
+\begin{lstlisting}
+<C>
+  <C><C/></C>
+  <C/>
+</C>
+\end{lstlisting}
+\end{DDbox}
+
+\subsection{DTD 5:}
+L'élément C n'est pas décrit correctement. Soit il est vide, soit il contient un certains nombre de fils C:\\
+\begin{DDbox}{\linewidth}
+\begin{lstlisting}
+
+(EMPTY | B*), qui peut se simplfier par (B*)
+\end{lstlisting}
+\end{DDbox}
+
+\subsection{DTD 6:}
+\begin{DDbox}{\linewidth}
+\begin{lstlisting}
+<C>
+  <B/>
+  <B/>
+  <C/>
+  <C/>
+  <C/>
+  <C/>
+</C>
+\end{lstlisting}
+\end{DDbox}
+\end{document}
