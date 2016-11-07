@@ -1,0 +1,4 @@
+abonneA(idUser1: int, idUser2: int)
+commentaire(idCommentaire: int, texte: String, date: Date, idUser: int)
+PhotoCommentable(idPC: int, date:Date, gpsLat: float, gpsLon: float, nbVues: int, idUser: int, idAlbum: int, idLicence: int, idAppareil: int)
+aime(idUser, idPhoto)

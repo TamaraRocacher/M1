@@ -1,0 +1,31 @@
+Photo(idP: int, date: Date, gpsLat: float, gpsLon: float, nbVues: int, idUser: int, idAlbum: int, idLicence: int, idAppareil: int, idAlbum: int)
+user_photo_aime(idPhoto: int, idUser: int)
+Tag(idTag: int, tag: String, idPhoto: int)
+Galerie(idG: int, nom: String)
+photo_galerie(idPhoto: int, idGalerie: int)
+User(idU: int, description: String, abonnes: int, abonnements:int)
+user_galerie(idUser: int, idGalerie: int)
+Appareil(idAppareil: int, modeleAppareil: String)
+Config(idConfig: int, ouvertureFocale: int, tempsExpo: int, flash: bool, idAppareil: int)
+Licence(idLicence: int, licence: enum)
+Album(idAlbum: int, nom: String)
+
+5.3 ) 
+a)
+SELECT * FROM Photo WHERE gpsLat = 43.62505 AND gpsLon = 3.862038;
+SELECT * FROM User, Appareil WHERE User.idAppareil = Appareil.idAppareil AND description = "fan de pingouins" AND modeleAppareil = "KODAC Pingouin"; // Tous les Utilisateurs fan de pingouins possédant un Appareil "KODAC Pingouin"
+SELECT COUNT(*) FROM User, Galerie, user_galerie WHERE User.idU = user_galerie.idUser AND user_galerie.idGalerie = Galerie.idGalerie AND Galerie.nom = "Montpellier" GROUP BY idU; // Compte le nombre d'utilisateurs ayant une galerie nommée "Montpellier"
+b)
+SELECT COUNT(*) FROM user_photo_aime, Photo, Licence WHERE user_photo_aime.idPhoto = Photo.idP AND Licence.idPhoto = Photo.idP AND Licence.nom = "tousDroitsReservés" GROUP BY idP ORDER BY COUNT(*) DESC LIMIT 5;
+c)
+SELECT idUser FROM User, Photo, DUAL WHERE User.idU = Photo.idP AND trunc(sysdate)-to_date(date, 'dd/mm/yyyy') DAYS > 365*5 GROUP BY idUser;
+d)
+SELECT COUNT(idGalerie) FROM Photo, photo_galerie WHERE Photo.idP = photo_galerie.idPhoto GROUP BY idPhoto ORDER BY COUNT(idGalerie) DESC LIMIT 5
+e)
+SELECT idUser FROM User, Galerie, Photo, photo_galerie, Album 
+WHERE 
+User.idUser = Photo.idUser AND
+Photo.idP = photo_galerie.idPhoto AND
+photo_galerie.idGalerie = Galerie.idGalerie AND
+Photo.idAlbum = Album.idAlbum AND
+Galerie.nom = Album.nom;
