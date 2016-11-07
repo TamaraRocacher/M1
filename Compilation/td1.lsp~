@@ -1,0 +1,2 @@
+(defun f(x) (+ 3 x))
+(defun g(v) (* 5 (f (+ v 2))))
