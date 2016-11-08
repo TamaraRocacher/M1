@@ -1,0 +1,72 @@
+\documentclass[a4paper,10pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{lmodern} %pack de police
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{eurosym}
+\usepackage{colortbl}
+\usepackage[table]{xcolor}
+\usepackage{enumerate}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+
+\title{\textbf{Rapport Mini-Projet}Base de Données Objet Relationnelle}
+\author{Tamara \bsc{Rocacher}~~-~~Meryll \bsc{Essig}}
+\date{\today}
+\makeindex
+\begin{document}
+  \begin{titlepage}
+  	\centering
+
+{\scshape\LARGE Université de Montpellier \par}
+  	\vspace{1cm}
+{\scshape\Large Rapport du Mini-Projet Bases de Données Avancées\par}
+  	\vspace{1.5cm}
+    \vfill
+  	{\huge\bfseries Base de Données Objet Relationnelle\par}
+  	\vspace{2cm}
+
+
+  	{\Large\itshape Tamara Rocacher~~-~~Meryll Essig\par}
+  	\vspace{2cm}
+  \vfill
+
+  % Bottom of the page
+ Ce rapport contient tout les scripts de création, remplissage et traitements demandés.
+
+  \end{titlepage}
+
+
+\tableofcontents
+
+
+%Le contenu
+\chapter{Introduction} % +/- 1 page
+\section{Base de données}
+  Une base de données Objet permet de stocker des informations et comportements associés à un objet de la vie réelle, en les regroupant dans un Type.
+  Un Type correspond à une classe, mais les objets seront stockés de manière persistante, c'est à dire qu'ils ne seront pas éffacés après la fin de l'éxecution.
+  L'aspect relationnel, quand à lui, permet de créer des liens entre ces objets (tables-type) ou avec d'autres tables, "simples".
+\section{League of Legends}
+  League of Legends est un jeu vidéo pour PC très détaillé. Un \textit{Utilisateur} y joue avec des \textit{Champions}, qui ont quatre \textit{capacités} propres à chacun d'eux. Les \textit{capacités} impactent le champion "émetteur" et/ou les autres champions en jeu, selon différents \textit{critères} (armure, défense, vitesse d'attaque,...). L'\textit{Utilisateur} peut renforcer les \textit{Champions} en leur associant des pages de  \textit{runes} et des \textit{maîtrises}, qui permettent d'améliorer certains \textit{critères} des \textit{Champions}. D'autre part, tout au long de la partie les \textit{critères} du \textit{champion} pourront encore être améliorés avec des \textit{Items} (pour ne pas confondre Objets du jeux et Objets de la BD).
+  Le choix des \textit{critères} à améliorer dépend des autres \textit{Champions} en jeux et de leurs \textit{critères} les plus renforcés. L'\textit{Utilisateur} doit donc avoir accès à tout ces renseignements pour prendre ces décisions, avant et pendant la partie.
+\section{Approche}
+  Au regard de la multitude d'objets présents dans le jeu, nous avons choisit l'approche OR. En effet, chaque champion en jeu est une instance d'un objet précis, spécialisation de l'objet général \textit{Champion}; décrit par ses critères et comportements associés. Chaque Item est aussi un objet, agissant possiblement sur tout les autres en jeu. L'approche OR nous permettra ainsi d'implementer un maximum de détails des comportements de chaque objet, au moyen de plusieurs tables-type et de spécialisation.
+
+
+\chapter{Conception}
+\section{Modèle conceptuel}
+\section{Modèle logique}
+
+
+
+\chapter{Réalisation}
+\section{Création}
+\section{Remplissage}
+\section{Traitements}
+
+
+\chapter{Conclusion} % Conclusions 1/2 pages
+
+\end{document}
