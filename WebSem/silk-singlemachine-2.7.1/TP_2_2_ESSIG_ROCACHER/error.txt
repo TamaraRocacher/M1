@@ -1,0 +1,484 @@
+févr. 20, 2017 11:01:43 PM org.silkframework.Silk$
+INFOS: Executing all.
+févr. 20, 2017 11:01:43 PM org.silkframework.runtime.activity.Generate Links
+INFOS: Started
+févr. 20, 2017 11:01:43 PM org.silkframework.runtime.activity.Generate Links.Loading
+INFOS: Started
+févr. 20, 2017 11:01:43 PM org.silkframework.runtime.activity.Generate Links.Loading
+INFOS: Loading entities of dataset http://id.insee.fr/sparql/
+févr. 20, 2017 11:01:43 PM org.silkframework.runtime.activity.Generate Links.Loading
+INFOS: Loading entities of dataset http://data.ign.fr/id/sparql/
+févr. 20, 2017 11:01:43 PM org.silkframework.runtime.activity.Generate Links.MatchTask
+INFOS: Started
+févr. 20, 2017 11:01:43 PM org.silkframework.plugins.dataset.rdf.endpoint.PagingSparqlTraversable$
+INFOS: Query failed:
+SELECT DISTINCT ?a ?v0 
+WHERE {
+?a ?v_p ?v_o .
+OPTIONAL {
+?a <http://www.w3.org/2000/01/rdf-schema#label> ?v0 .
+}
+} ORDER BY ?a OFFSET 0 LIMIT 1000
+Error Message: '<html><head><title>Apache Tomcat/6.0.35 - Rapport d'erreur</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>Etat HTTP 500 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Rapport d'exception</p><p><b>message</b> <u></u></p><p><b>description</b> <u>Le serveur a rencontré une erreur interne () qui l'a empêché de satisfaire la requête.</u></p><p><b>exception</b> <pre>javax.servlet.ServletException: java.lang.IllegalArgumentException: timeout value is negative
+	org.apache.shiro.web.servlet.AdviceFilter.cleanup(AdviceFilter.java:196)
+	org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:148)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:359)
+	org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:275)
+	org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:344)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:272)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.datalift.core.i18n.web.PreferredLocalesFilter.doFilter(PreferredLocalesFilter.java:138)
+	org.datalift.core.util.web.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:135)
+</pre></p><p><b>cause mère</b> <pre>java.lang.IllegalArgumentException: timeout value is negative
+	java.lang.Object.wait(Native Method)
+	org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.doGetConnection(MultiThreadedHttpConnectionManager.java:518)
+	org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.getConnectionWithTimeout(MultiThreadedHttpConnectionManager.java:416)
+	org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:153)
+	org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	org.openrdf.http.client.HTTPClient.getTupleQueryResult(HTTPClient.java:1136)
+	org.openrdf.http.client.HTTPClient.sendTupleQuery(HTTPClient.java:447)
+	org.openrdf.repository.http.HTTPTupleQuery.evaluate(HTTPTupleQuery.java:60)
+	org.datalift.sparql.SesameSparqlEndpoint$SelectStreamingOutput.write(SesameSparqlEndpoint.java:891)
+	com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:71)
+	com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:57)
+	com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306)
+	com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1437)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339)
+	com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416)
+	com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:895)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:843)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:804)
+	org.datalift.core.util.web.ResponseHeaderFilter.doFilter(ResponseHeaderFilter.java:102)
+	org.datalift.core.util.web.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:97)
+	org.datalift.core.log.web.LogContextFilter.doFilter(LogContextFilter.java:145)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:359)
+	org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:275)
+	org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:344)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:272)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.datalift.core.i18n.web.PreferredLocalesFilter.doFilter(PreferredLocalesFilter.java:138)
+	org.datalift.core.util.web.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:135)
+</pre></p><p><b>note</b> <u>La trace complète de la cause mère de cette erreur est disponible dans les fichiers journaux de Apache Tomcat/6.0.35.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/6.0.35</h3></body></html>'.
+Retrying in 1000 ms. (1/3)
+févr. 20, 2017 11:01:44 PM org.silkframework.plugins.dataset.rdf.endpoint.PagingSparqlTraversable$
+INFOS: Query failed:
+SELECT DISTINCT ?a ?v0 
+WHERE {
+?a ?v_p ?v_o .
+OPTIONAL {
+?a <http://www.w3.org/2000/01/rdf-schema#label> ?v0 .
+}
+} ORDER BY ?a OFFSET 0 LIMIT 1000
+Error Message: '<html><head><title>Apache Tomcat/6.0.35 - Rapport d'erreur</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>Etat HTTP 500 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Rapport d'exception</p><p><b>message</b> <u></u></p><p><b>description</b> <u>Le serveur a rencontré une erreur interne () qui l'a empêché de satisfaire la requête.</u></p><p><b>exception</b> <pre>javax.servlet.ServletException: java.lang.IllegalArgumentException: timeout value is negative
+	org.apache.shiro.web.servlet.AdviceFilter.cleanup(AdviceFilter.java:196)
+	org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:148)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:359)
+	org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:275)
+	org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:344)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:272)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.datalift.core.i18n.web.PreferredLocalesFilter.doFilter(PreferredLocalesFilter.java:138)
+	org.datalift.core.util.web.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:135)
+</pre></p><p><b>cause mère</b> <pre>java.lang.IllegalArgumentException: timeout value is negative
+	java.lang.Object.wait(Native Method)
+	org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.doGetConnection(MultiThreadedHttpConnectionManager.java:518)
+	org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.getConnectionWithTimeout(MultiThreadedHttpConnectionManager.java:416)
+	org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:153)
+	org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	org.openrdf.http.client.HTTPClient.getTupleQueryResult(HTTPClient.java:1136)
+	org.openrdf.http.client.HTTPClient.sendTupleQuery(HTTPClient.java:447)
+	org.openrdf.repository.http.HTTPTupleQuery.evaluate(HTTPTupleQuery.java:60)
+	org.datalift.sparql.SesameSparqlEndpoint$SelectStreamingOutput.write(SesameSparqlEndpoint.java:891)
+	com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:71)
+	com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:57)
+	com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306)
+	com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1437)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339)
+	com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416)
+	com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:895)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:843)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:804)
+	org.datalift.core.util.web.ResponseHeaderFilter.doFilter(ResponseHeaderFilter.java:102)
+	org.datalift.core.util.web.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:97)
+	org.datalift.core.log.web.LogContextFilter.doFilter(LogContextFilter.java:145)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:359)
+	org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:275)
+	org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:344)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:272)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.datalift.core.i18n.web.PreferredLocalesFilter.doFilter(PreferredLocalesFilter.java:138)
+	org.datalift.core.util.web.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:135)
+</pre></p><p><b>note</b> <u>La trace complète de la cause mère de cette erreur est disponible dans les fichiers journaux de Apache Tomcat/6.0.35.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/6.0.35</h3></body></html>'.
+Retrying in 1000 ms. (2/3)
+févr. 20, 2017 11:01:47 PM org.silkframework.plugins.dataset.rdf.endpoint.PagingSparqlTraversable$
+INFOS: Query failed:
+SELECT DISTINCT ?a ?v0 
+WHERE {
+?a ?v_p ?v_o .
+OPTIONAL {
+?a <http://www.w3.org/2000/01/rdf-schema#label> ?v0 .
+}
+} ORDER BY ?a OFFSET 0 LIMIT 1000
+Error Message: '<html><head><title>Apache Tomcat/6.0.35 - Rapport d'erreur</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>Etat HTTP 500 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Rapport d'exception</p><p><b>message</b> <u></u></p><p><b>description</b> <u>Le serveur a rencontré une erreur interne () qui l'a empêché de satisfaire la requête.</u></p><p><b>exception</b> <pre>javax.servlet.ServletException: java.lang.IllegalArgumentException: timeout value is negative
+	org.apache.shiro.web.servlet.AdviceFilter.cleanup(AdviceFilter.java:196)
+	org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:148)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:359)
+	org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:275)
+	org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:344)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:272)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.datalift.core.i18n.web.PreferredLocalesFilter.doFilter(PreferredLocalesFilter.java:138)
+	org.datalift.core.util.web.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:135)
+</pre></p><p><b>cause mère</b> <pre>java.lang.IllegalArgumentException: timeout value is negative
+	java.lang.Object.wait(Native Method)
+	org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.doGetConnection(MultiThreadedHttpConnectionManager.java:518)
+	org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.getConnectionWithTimeout(MultiThreadedHttpConnectionManager.java:416)
+	org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:153)
+	org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	org.openrdf.http.client.HTTPClient.getTupleQueryResult(HTTPClient.java:1136)
+	org.openrdf.http.client.HTTPClient.sendTupleQuery(HTTPClient.java:447)
+	org.openrdf.repository.http.HTTPTupleQuery.evaluate(HTTPTupleQuery.java:60)
+	org.datalift.sparql.SesameSparqlEndpoint$SelectStreamingOutput.write(SesameSparqlEndpoint.java:891)
+	com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:71)
+	com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:57)
+	com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306)
+	com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1437)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339)
+	com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416)
+	com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:895)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:843)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:804)
+	org.datalift.core.util.web.ResponseHeaderFilter.doFilter(ResponseHeaderFilter.java:102)
+	org.datalift.core.util.web.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:97)
+	org.datalift.core.log.web.LogContextFilter.doFilter(LogContextFilter.java:145)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:359)
+	org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:275)
+	org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:344)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:272)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.datalift.core.i18n.web.PreferredLocalesFilter.doFilter(PreferredLocalesFilter.java:138)
+	org.datalift.core.util.web.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:135)
+</pre></p><p><b>note</b> <u>La trace complète de la cause mère de cette erreur est disponible dans les fichiers journaux de Apache Tomcat/6.0.35.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/6.0.35</h3></body></html>'.
+Retrying in 1000 ms. (3/3)
+févr. 20, 2017 11:01:48 PM org.silkframework.runtime.activity.Generate Links.Loading
+AVERTISSEMENT: Error loading resources
+java.io.IOException: <html><head><title>Apache Tomcat/6.0.35 - Rapport d'erreur</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>Etat HTTP 500 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Rapport d'exception</p><p><b>message</b> <u></u></p><p><b>description</b> <u>Le serveur a rencontré une erreur interne () qui l'a empêché de satisfaire la requête.</u></p><p><b>exception</b> <pre>javax.servlet.ServletException: java.lang.IllegalArgumentException: timeout value is negative
+	org.apache.shiro.web.servlet.AdviceFilter.cleanup(AdviceFilter.java:196)
+	org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:148)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:359)
+	org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:275)
+	org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:344)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:272)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.datalift.core.i18n.web.PreferredLocalesFilter.doFilter(PreferredLocalesFilter.java:138)
+	org.datalift.core.util.web.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:135)
+</pre></p><p><b>cause mère</b> <pre>java.lang.IllegalArgumentException: timeout value is negative
+	java.lang.Object.wait(Native Method)
+	org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.doGetConnection(MultiThreadedHttpConnectionManager.java:518)
+	org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.getConnectionWithTimeout(MultiThreadedHttpConnectionManager.java:416)
+	org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:153)
+	org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	org.openrdf.http.client.HTTPClient.getTupleQueryResult(HTTPClient.java:1136)
+	org.openrdf.http.client.HTTPClient.sendTupleQuery(HTTPClient.java:447)
+	org.openrdf.repository.http.HTTPTupleQuery.evaluate(HTTPTupleQuery.java:60)
+	org.datalift.sparql.SesameSparqlEndpoint$SelectStreamingOutput.write(SesameSparqlEndpoint.java:891)
+	com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:71)
+	com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:57)
+	com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306)
+	com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1437)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339)
+	com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416)
+	com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:895)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:843)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:804)
+	org.datalift.core.util.web.ResponseHeaderFilter.doFilter(ResponseHeaderFilter.java:102)
+	org.datalift.core.util.web.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:97)
+	org.datalift.core.log.web.LogContextFilter.doFilter(LogContextFilter.java:145)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:359)
+	org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:275)
+	org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:344)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:272)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.datalift.core.i18n.web.PreferredLocalesFilter.doFilter(PreferredLocalesFilter.java:138)
+	org.datalift.core.util.web.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:135)
+</pre></p><p><b>note</b> <u>La trace complète de la cause mère de cette erreur est disponible dans les fichiers journaux de Apache Tomcat/6.0.35.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/6.0.35</h3></body></html>
+	at org.silkframework.plugins.dataset.rdf.endpoint.RemoteSparqlEndpoint.executeSelect(RemoteSparqlEndpoint.scala:65)
+	at org.silkframework.plugins.dataset.rdf.endpoint.RemoteSparqlEndpoint$$anonfun$select$1.apply(RemoteSparqlEndpoint.scala:39)
+	at org.silkframework.plugins.dataset.rdf.endpoint.RemoteSparqlEndpoint$$anonfun$select$1.apply(RemoteSparqlEndpoint.scala:39)
+	at org.silkframework.plugins.dataset.rdf.endpoint.PagingSparqlTraversable$ResultsTraversable.org$silkframework$plugins$dataset$rdf$endpoint$PagingSparqlTraversable$ResultsTraversable$$executeQuery(PagingSparqlTraversable.scala:95)
+	at org.silkframework.plugins.dataset.rdf.endpoint.PagingSparqlTraversable$ResultsTraversable$$anonfun$foreach$1.apply$mcVI$sp(PagingSparqlTraversable.scala:48)
+	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:166)
+	at org.silkframework.plugins.dataset.rdf.endpoint.PagingSparqlTraversable$ResultsTraversable.foreach(PagingSparqlTraversable.scala:47)
+	at org.silkframework.plugins.dataset.rdf.sparql.SimpleEntityRetriever$EntityTraversable.foreach(SimpleEntityRetriever.scala:145)
+	at org.silkframework.cache.FileEntityCache.write(FileEntityCache.scala:48)
+	at org.silkframework.execution.Loader$LoadingThread.run(Loader.scala:89)
+Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL: http://data.ign.fr/id/sparql/?query=SELECT+DISTINCT+%3Fa+%3Fv0+%0AWHERE+%7B%0A%3Fa+%3Fv_p+%3Fv_o+.%0AOPTIONAL+%7B%0A%3Fa+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label%3E+%3Fv0+.%0A%7D%0A%7D+ORDER+BY+%3Fa+OFFSET+0+LIMIT+1000
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1876)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+	at org.silkframework.plugins.dataset.rdf.endpoint.RemoteSparqlEndpoint.executeSelect(RemoteSparqlEndpoint.scala:56)
+	... 9 more
+
+févr. 20, 2017 11:01:48 PM org.silkframework.runtime.activity.Generate Links.Loading
+AVERTISSEMENT: Failed after 4s: <html><head><title>Apache Tomcat/6.0.35 - Rapport d'erreur</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>Etat HTTP 500 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Rapport d'exception</p><p><b>message</b> <u></u></p><p><b>description</b> <u>Le serveur a rencontré une erreur interne () qui l'a empêché de satisfaire la requête.</u></p><p><b>exception</b> <pre>javax.servlet.ServletException: java.lang.IllegalArgumentException: timeout value is negative
+	org.apache.shiro.web.servlet.AdviceFilter.cleanup(AdviceFilter.java:196)
+	org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:148)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:359)
+	org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:275)
+	org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:344)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:272)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.datalift.core.i18n.web.PreferredLocalesFilter.doFilter(PreferredLocalesFilter.java:138)
+	org.datalift.core.util.web.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:135)
+</pre></p><p><b>cause mère</b> <pre>java.lang.IllegalArgumentException: timeout value is negative
+	java.lang.Object.wait(Native Method)
+	org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.doGetConnection(MultiThreadedHttpConnectionManager.java:518)
+	org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.getConnectionWithTimeout(MultiThreadedHttpConnectionManager.java:416)
+	org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:153)
+	org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	org.openrdf.http.client.HTTPClient.getTupleQueryResult(HTTPClient.java:1136)
+	org.openrdf.http.client.HTTPClient.sendTupleQuery(HTTPClient.java:447)
+	org.openrdf.repository.http.HTTPTupleQuery.evaluate(HTTPTupleQuery.java:60)
+	org.datalift.sparql.SesameSparqlEndpoint$SelectStreamingOutput.write(SesameSparqlEndpoint.java:891)
+	com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:71)
+	com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:57)
+	com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306)
+	com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1437)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339)
+	com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416)
+	com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:895)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:843)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:804)
+	org.datalift.core.util.web.ResponseHeaderFilter.doFilter(ResponseHeaderFilter.java:102)
+	org.datalift.core.util.web.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:97)
+	org.datalift.core.log.web.LogContextFilter.doFilter(LogContextFilter.java:145)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:359)
+	org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:275)
+	org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:344)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:272)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.datalift.core.i18n.web.PreferredLocalesFilter.doFilter(PreferredLocalesFilter.java:138)
+	org.datalift.core.util.web.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:135)
+</pre></p><p><b>note</b> <u>La trace complète de la cause mère de cette erreur est disponible dans les fichiers journaux de Apache Tomcat/6.0.35.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/6.0.35</h3></body></html>
+java.io.IOException: <html><head><title>Apache Tomcat/6.0.35 - Rapport d'erreur</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>Etat HTTP 500 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Rapport d'exception</p><p><b>message</b> <u></u></p><p><b>description</b> <u>Le serveur a rencontré une erreur interne () qui l'a empêché de satisfaire la requête.</u></p><p><b>exception</b> <pre>javax.servlet.ServletException: java.lang.IllegalArgumentException: timeout value is negative
+	org.apache.shiro.web.servlet.AdviceFilter.cleanup(AdviceFilter.java:196)
+	org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:148)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:359)
+	org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:275)
+	org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:344)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:272)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.datalift.core.i18n.web.PreferredLocalesFilter.doFilter(PreferredLocalesFilter.java:138)
+	org.datalift.core.util.web.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:135)
+</pre></p><p><b>cause mère</b> <pre>java.lang.IllegalArgumentException: timeout value is negative
+	java.lang.Object.wait(Native Method)
+	org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.doGetConnection(MultiThreadedHttpConnectionManager.java:518)
+	org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.getConnectionWithTimeout(MultiThreadedHttpConnectionManager.java:416)
+	org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:153)
+	org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	org.openrdf.http.client.HTTPClient.getTupleQueryResult(HTTPClient.java:1136)
+	org.openrdf.http.client.HTTPClient.sendTupleQuery(HTTPClient.java:447)
+	org.openrdf.repository.http.HTTPTupleQuery.evaluate(HTTPTupleQuery.java:60)
+	org.datalift.sparql.SesameSparqlEndpoint$SelectStreamingOutput.write(SesameSparqlEndpoint.java:891)
+	com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:71)
+	com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:57)
+	com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306)
+	com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1437)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339)
+	com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416)
+	com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:895)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:843)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:804)
+	org.datalift.core.util.web.ResponseHeaderFilter.doFilter(ResponseHeaderFilter.java:102)
+	org.datalift.core.util.web.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:97)
+	org.datalift.core.log.web.LogContextFilter.doFilter(LogContextFilter.java:145)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:359)
+	org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:275)
+	org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:344)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:272)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.datalift.core.i18n.web.PreferredLocalesFilter.doFilter(PreferredLocalesFilter.java:138)
+	org.datalift.core.util.web.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:135)
+</pre></p><p><b>note</b> <u>La trace complète de la cause mère de cette erreur est disponible dans les fichiers journaux de Apache Tomcat/6.0.35.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/6.0.35</h3></body></html>
+	at org.silkframework.plugins.dataset.rdf.endpoint.RemoteSparqlEndpoint.executeSelect(RemoteSparqlEndpoint.scala:65)
+	at org.silkframework.plugins.dataset.rdf.endpoint.RemoteSparqlEndpoint$$anonfun$select$1.apply(RemoteSparqlEndpoint.scala:39)
+	at org.silkframework.plugins.dataset.rdf.endpoint.RemoteSparqlEndpoint$$anonfun$select$1.apply(RemoteSparqlEndpoint.scala:39)
+	at org.silkframework.plugins.dataset.rdf.endpoint.PagingSparqlTraversable$ResultsTraversable.org$silkframework$plugins$dataset$rdf$endpoint$PagingSparqlTraversable$ResultsTraversable$$executeQuery(PagingSparqlTraversable.scala:95)
+	at org.silkframework.plugins.dataset.rdf.endpoint.PagingSparqlTraversable$ResultsTraversable$$anonfun$foreach$1.apply$mcVI$sp(PagingSparqlTraversable.scala:48)
+	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:166)
+	at org.silkframework.plugins.dataset.rdf.endpoint.PagingSparqlTraversable$ResultsTraversable.foreach(PagingSparqlTraversable.scala:47)
+	at org.silkframework.plugins.dataset.rdf.sparql.SimpleEntityRetriever$EntityTraversable.foreach(SimpleEntityRetriever.scala:145)
+	at org.silkframework.cache.FileEntityCache.write(FileEntityCache.scala:48)
+	at org.silkframework.execution.Loader$LoadingThread.run(Loader.scala:89)
+Caused by: java.io.IOException: Server returned HTTP response code: 500 for URL: http://data.ign.fr/id/sparql/?query=SELECT+DISTINCT+%3Fa+%3Fv0+%0AWHERE+%7B%0A%3Fa+%3Fv_p+%3Fv_o+.%0AOPTIONAL+%7B%0A%3Fa+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23label%3E+%3Fv0+.%0A%7D%0A%7D+ORDER+BY+%3Fa+OFFSET+0+LIMIT+1000
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1876)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+	at org.silkframework.plugins.dataset.rdf.endpoint.RemoteSparqlEndpoint.executeSelect(RemoteSparqlEndpoint.scala:56)
+	... 9 more
+févr. 20, 2017 11:02:03 PM org.silkframework.plugins.dataset.rdf.endpoint.PagingSparqlTraversable$
+INFOS: Query failed:
+SELECT DISTINCT ?a ?v0 
+WHERE {
+?a ?v_p ?v_o .
+OPTIONAL {
+?a <http://www.w3.org/2000/01/rdf-schema#label> ?v0 .
+}
+} ORDER BY ?a OFFSET 0 LIMIT 1000
+Error Message: '<html><body><h1>504 Gateway Time-out</h1>
+The server didn't respond in time.
+</body></html>'.
+Retrying in 1000 ms. (1/3)
+févr. 20, 2017 11:02:03 PM org.silkframework.runtime.activity.Generate Links.MatchTask
+INFOS: Finished in 20s
+févr. 20, 2017 11:02:03 PM org.silkframework.runtime.activity.Generate Links.Filtering
+INFOS: Started
+févr. 20, 2017 11:02:03 PM org.silkframework.runtime.activity.Generate Links.Filtering
+INFOS: Merged 0 links yielding 0 links
+févr. 20, 2017 11:02:03 PM org.silkframework.runtime.activity.Generate Links.Filtering
+INFOS: Finished in 2ms
+févr. 20, 2017 11:02:03 PM org.silkframework.runtime.activity.Generate Links.Writing output
+INFOS: Started
+févr. 20, 2017 11:02:03 PM org.silkframework.runtime.activity.Generate Links.Writing output
+INFOS: Finished in 1ms
+févr. 20, 2017 11:02:03 PM org.silkframework.runtime.activity.Generate Links
+INFOS: Finished in 20s
+févr. 20, 2017 11:02:03 PM org.silkframework.Silk$
+AVERTISSEMENT: The following warnings haven been generated during the execution:
+- Failed after 4s: <html><head><title>Apache Tomcat/6.0.35 - Rapport d'erreur</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>Etat HTTP 500 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Rapport d'exception</p><p><b>message</b> <u></u></p><p><b>description</b> <u>Le serveur a rencontré une erreur interne () qui l'a empêché de satisfaire la requête.</u></p><p><b>exception</b> <pre>javax.servlet.ServletException: java.lang.IllegalArgumentException: timeout value is negative
+	org.apache.shiro.web.servlet.AdviceFilter.cleanup(AdviceFilter.java:196)
+	org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:148)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:359)
+	org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:275)
+	org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:344)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:272)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.datalift.core.i18n.web.PreferredLocalesFilter.doFilter(PreferredLocalesFilter.java:138)
+	org.datalift.core.util.web.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:135)
+</pre></p><p><b>cause mère</b> <pre>java.lang.IllegalArgumentException: timeout value is negative
+	java.lang.Object.wait(Native Method)
+	org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.doGetConnection(MultiThreadedHttpConnectionManager.java:518)
+	org.apache.commons.httpclient.MultiThreadedHttpConnectionManager.getConnectionWithTimeout(MultiThreadedHttpConnectionManager.java:416)
+	org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:153)
+	org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	org.openrdf.http.client.HTTPClient.getTupleQueryResult(HTTPClient.java:1136)
+	org.openrdf.http.client.HTTPClient.sendTupleQuery(HTTPClient.java:447)
+	org.openrdf.repository.http.HTTPTupleQuery.evaluate(HTTPTupleQuery.java:60)
+	org.datalift.sparql.SesameSparqlEndpoint$SelectStreamingOutput.write(SesameSparqlEndpoint.java:891)
+	com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:71)
+	com.sun.jersey.core.impl.provider.entity.StreamingOutputProvider.writeTo(StreamingOutputProvider.java:57)
+	com.sun.jersey.spi.container.ContainerResponse.write(ContainerResponse.java:306)
+	com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1437)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1349)
+	com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1339)
+	com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416)
+	com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:537)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:895)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:843)
+	com.sun.jersey.spi.container.servlet.ServletContainer.doFilter(ServletContainer.java:804)
+	org.datalift.core.util.web.ResponseHeaderFilter.doFilter(ResponseHeaderFilter.java:102)
+	org.datalift.core.util.web.RequestLifecycleFilter.doFilter(RequestLifecycleFilter.java:97)
+	org.datalift.core.log.web.LogContextFilter.doFilter(LogContextFilter.java:145)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:359)
+	org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:275)
+	org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:344)
+	org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:272)
+	org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81)
+	org.datalift.core.i18n.web.PreferredLocalesFilter.doFilter(PreferredLocalesFilter.java:138)
+	org.datalift.core.util.web.CharacterEncodingFilter.doFilter(CharacterEncodingFilter.java:135)
+</pre></p><p><b>note</b> <u>La trace complète de la cause mère de cette erreur est disponible dans les fichiers journaux de Apache Tomcat/6.0.35.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/6.0.35</h3></body></html>
+- Error loading resources

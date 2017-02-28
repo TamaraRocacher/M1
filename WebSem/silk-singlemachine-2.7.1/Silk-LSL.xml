@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Silk>
+
+  <Prefixes>
+    <Prefix id="rdf" namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
+    <Prefix id="igeo" namespace="http://rdf.insee.fr/def/geo#" />
+    <Prefix id="ign" namespace="http://data.ign.fr/def/geofla/" />
+    <Prefix id="rdfs" namespace="http://www.w3.org/2000/01/rdf-schema#" />
+    <Prefix id="dbpedia" namespace="http://dbpedia.org/ontology/" />
+    <Prefix id="gn" namespace="http://www.geonames.org/ontology#" />
+   
+  </Prefixes>
+
+  <DataSources>
+    <DataSource id="igeo" type="sparqlEndpoint">
+      <Param name="endpointURI" value="http://id.insee.fr/sparql/" />
+   
+    </DataSource>
+
+    <DataSource id="ign" type="sparqlEndpoint">
+      <Param name="endpointURI" value="http://data.ign.fr/id/sparql/" />
+      
+    </DataSource>
+
+    <DataSource id="zz" type="file">
+      <Param name="file" value="./file.f" />
+      <Param name="format" value="RDF/XML" />
+    </DataSource>
+  </DataSources>
+  
+  <!-- [<Blocking blocks="100" />] -->
+
+  <Interlinks>
+    <Interlink id="oo">
+      <LinkType>owl:sameAs</LinkType>
+
+      <SourceDataset dataSource="igeo" var="a">
+        <!-- <RestrictTo>
+          ?a rdf:type igeo:Commune
+        </RestrictTo> -->
+      </SourceDataset>
+
+      <TargetDataset dataSource="ign" var="b">
+        <!-- <RestrictTo>
+          ?b rdf:type ign:Commune
+        </RestrictTo> -->
+      </TargetDataset>
+
+      <LinkageRule>
+        <Aggregate type="average">
+          <Compare metric="levenshteinDistance" threshold="1">
+            <Input path="?a/rdfs:label" />
+            <Input path="?b/rdfs:label" />
+          </Compare>
+         <!--  <Compare metric="levenshteinDistance" threshold="1">
+            <Input path="?a/igeo:canton" />
+            <Input path="?b/ign:canton" />
+          </Compare>
+          <Compare metric="levenshteinDistance" threshold="1">
+            <Input path="?a/igeo:departement" />
+            <Input path="?b/ign:departement" />
+          </Compare> -->
+        </Aggregate>
+      </LinkageRule>
+
+      <Filter />
+
+      <Outputs>
+        <Dataset id="igeo" type="file">
+          <Param name="file" value="links.nt"/>
+          <Param name="format" value="N-TRIPLE"/>
+        </Dataset>
+      </Outputs>
+    </Interlink>
+  </Interlinks>
+
+</Silk>
