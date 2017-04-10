@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Silk>
+
+  <Prefixes>
+    <Prefix id="p11" namespace="/home/tam/Documents/git/M1/WebSem/TP3_ESSIG_ROCACHER/person11/person11.nt" />
+    <Prefix id="p12" namespace="/home/tam/Documents/git/M1/WebSem/TP3_ESSIG_ROCACHER/person12/person12.nt" /> 
+    <Prefix id="ontology_base" namespace="http://www.okkam.org/oaie/" />
+  </Prefixes>
+
+  <DataSources>
+    <DataSource id="p11" type="file">
+       <Param name="file" value="/home/tam/Documents/git/M1/WebSem/TP3_ESSIG_ROCACHER/person11/person11.nt" />
+      <Param name="format" value="N-TRIPLE" />
+    </DataSource>
+
+    <DataSource id="p12" type="file">
+       <Param name="file" value="/home/tam/Documents/git/M1/WebSem/TP3_ESSIG_ROCACHER/person12/person12.nt" />
+      <Param name="format" value="N-TRIPLE" />
+    </DataSource>
+     <DataSource id="text" type="file">
+      <Param name="file" value="./output.nt"/>
+      <Param name="format" value="N-TRIPLE"/>
+    </DataSource> 
+  </DataSources>
+  
+  <!-- [<Blocking blocks="100" />] -->
+
+  <Interlinks>
+    <Interlink id="person">
+      <LinkType>owl:sameAs</LinkType>
+        <SourceDataset dataSource="p11" var="a">
+        </SourceDataset>
+
+        <TargetDataset dataSource="p12" var="b">
+        </TargetDataset>
+
+      <LinkageRule>
+        <Aggregate type="average">
+          <Compare metric="equality" threshold="1" >
+            <Input path="?a/ontology_base:phone_number" />
+            <TransformInput function="replace">
+              <Input path="?b/ontology_base:phone_number" />
+                <Param name="search" value="_" />
+                <Param name="replace" value=" " />
+            </TransformInput>
+          </Compare>
+          <Compare metric="equality" threshold="1" >
+            <Input path="?a/ontology_base:soc_sec_id" />
+              <Input path="?b/ontology_base:soc_sec_id" />
+          </Compare>
+       
+        </Aggregate>
+      </LinkageRule>
+
+    
+
+      <Outputs>
+      <Dataset id="p11" type="file">
+      <Param name="file" value="links.nt"/>
+      <Param name="format" value="N-TRIPLE"/>
+    </Dataset>
+    </Outputs>
+    </Interlink>
+  </Interlinks>
+
+</Silk>
