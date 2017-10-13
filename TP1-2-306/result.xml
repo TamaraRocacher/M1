@@ -1,0 +1,1400 @@
+<RCAExplore_Document>
+	<Step nb="0">
+		<Lattice numberObj="12" numberAtt="71" numberCpt="15" >
+			<Config algo="ares">
+			</Config>
+			<Name>Collections</Name>
+			<Object>org.apache.commons.collections4.set.CompositeSet</Object>
+			<Object>org.apache.commons.collections4.set.ListOrderedSet</Object>
+			<Object>org.apache.commons.collections4.set.MapBackedSet</Object>
+			<Object>org.apache.commons.collections4.set.PredicatedNavigableSet</Object>
+			<Object>org.apache.commons.collections4.set.PredicatedSortedSet</Object>
+			<Object>org.apache.commons.collections4.set.PredicatedSet</Object>
+			<Object>org.apache.commons.collections4.set.TransformedNavigableSet</Object>
+			<Object>org.apache.commons.collections4.set.TransformedSet</Object>
+			<Object>org.apache.commons.collections4.set.TransformedSortedSet</Object>
+			<Object>org.apache.commons.collections4.set.UnmodifiableNavigableSet</Object>
+			<Object>org.apache.commons.collections4.set.UnmodifiableSet</Object>
+			<Object>org.apache.commons.collections4.set.UnmodifiableSortedSet</Object>
+			<Attribute>void setMutator(org.apache.commons.collections4.set.CompositeSet$SetMutator)</Attribute>
+			<Attribute>void addComposited([Ljava.util.Set;)</Attribute>
+			<Attribute>void addComposited(java.util.Set, java.util.Set)</Attribute>
+			<Attribute>void addComposited(java.util.Set)</Attribute>
+			<Attribute>void removeComposited(java.util.Set)</Attribute>
+			<Attribute>interface java.util.Set toSet()</Attribute>
+			<Attribute>interface java.util.List getSets()</Attribute>
+			<Attribute>boolean add(java.lang.Object)</Attribute>
+			<Attribute>boolean remove(java.lang.Object)</Attribute>
+			<Attribute>void clear()</Attribute>
+			<Attribute>boolean isEmpty()</Attribute>
+			<Attribute>boolean contains(java.lang.Object)</Attribute>
+			<Attribute>int size()</Attribute>
+			<Attribute>class [Ljava.lang.Object; toArray()</Attribute>
+			<Attribute>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute>
+			<Attribute>interface java.util.Iterator iterator()</Attribute>
+			<Attribute>boolean addAll(java.util.Collection)</Attribute>
+			<Attribute>boolean containsAll(java.util.Collection)</Attribute>
+			<Attribute>boolean removeAll(java.util.Collection)</Attribute>
+			<Attribute>boolean retainAll(java.util.Collection)</Attribute>
+			<Attribute>default interface java.util.Spliterator spliterator()</Attribute>
+			<Attribute>default interface java.util.stream.Stream stream()</Attribute>
+			<Attribute>default boolean removeIf(java.util.function.Predicate)</Attribute>
+			<Attribute>default interface java.util.stream.Stream parallelStream()</Attribute>
+			<Attribute>default void forEach(java.util.function.Consumer)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.ListOrderedSet listOrderedSet(java.util.List)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.ListOrderedSet listOrderedSet(java.util.Set)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.ListOrderedSet listOrderedSet(java.util.Set, java.util.List)</Attribute>
+			<Attribute>void add(int, java.lang.Object)</Attribute>
+			<Attribute>class java.lang.Object remove(int)</Attribute>
+			<Attribute>class java.lang.Object get(int)</Attribute>
+			<Attribute>int indexOf(java.lang.Object)</Attribute>
+			<Attribute>interface org.apache.commons.collections4.OrderedIterator iterator()</Attribute>
+			<Attribute>boolean addAll(int, java.util.Collection)</Attribute>
+			<Attribute>interface java.util.List asList()</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.MapBackedSet mapBackedSet(java.util.Map)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.MapBackedSet mapBackedSet(java.util.Map, java.lang.Object)</Attribute>
+			<Attribute>class java.lang.Object pollFirst()</Attribute>
+			<Attribute>class java.lang.Object pollLast()</Attribute>
+			<Attribute>interface java.util.Iterator descendingIterator()</Attribute>
+			<Attribute>class java.lang.Object higher(java.lang.Object)</Attribute>
+			<Attribute>interface java.util.NavigableSet descendingSet()</Attribute>
+			<Attribute>interface java.util.NavigableSet subSet(java.lang.Object, boolean, java.lang.Object, boolean)</Attribute>
+			<Attribute>interface java.util.NavigableSet headSet(java.lang.Object, boolean)</Attribute>
+			<Attribute>interface java.util.NavigableSet tailSet(java.lang.Object, boolean)</Attribute>
+			<Attribute>class java.lang.Object lower(java.lang.Object)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.PredicatedNavigableSet predicatedNavigableSet(java.util.NavigableSet, org.apache.commons.collections4.Predicate)</Attribute>
+			<Attribute>class java.lang.Object ceiling(java.lang.Object)</Attribute>
+			<Attribute>class java.lang.Object floor(java.lang.Object)</Attribute>
+			<Attribute>class java.lang.Object last()</Attribute>
+			<Attribute>interface java.util.Comparator comparator()</Attribute>
+			<Attribute>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute>
+			<Attribute>interface java.util.SortedSet headSet(java.lang.Object)</Attribute>
+			<Attribute>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.PredicatedSortedSet predicatedSortedSet(java.util.SortedSet, org.apache.commons.collections4.Predicate)</Attribute>
+			<Attribute>class java.lang.Object first()</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.PredicatedSet predicatedSet(java.util.Set, org.apache.commons.collections4.Predicate)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.collection.PredicatedCollection$Builder builder(org.apache.commons.collections4.Predicate)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.collection.PredicatedCollection$Builder notNullBuilder()</Attribute>
+			<Attribute>static class org.apache.commons.collections4.collection.PredicatedCollection predicatedCollection(java.util.Collection, org.apache.commons.collections4.Predicate)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.TransformedNavigableSet transformingNavigableSet(java.util.NavigableSet, org.apache.commons.collections4.Transformer)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.TransformedNavigableSet transformedNavigableSet(java.util.NavigableSet, org.apache.commons.collections4.Transformer)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.TransformedSortedSet transformingSortedSet(java.util.SortedSet, org.apache.commons.collections4.Transformer)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.TransformedSortedSet transformedSortedSet(java.util.SortedSet, org.apache.commons.collections4.Transformer)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.TransformedSet transformingSet(java.util.Set, org.apache.commons.collections4.Transformer)</Attribute>
+			<Attribute>static interface java.util.Set transformedSet(java.util.Set, org.apache.commons.collections4.Transformer)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.collection.TransformedCollection transformingCollection(java.util.Collection, org.apache.commons.collections4.Transformer)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.collection.TransformedCollection transformedCollection(java.util.Collection, org.apache.commons.collections4.Transformer)</Attribute>
+			<Attribute>static interface java.util.NavigableSet unmodifiableNavigableSet(java.util.NavigableSet)</Attribute>
+			<Attribute>static interface java.util.Set unmodifiableSet(java.util.Set)</Attribute>
+			<Attribute>static interface java.util.SortedSet unmodifiableSortedSet(java.util.SortedSet)</Attribute>
+			<Concept>
+				<ID>Concept_Collections_7</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.CompositeSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>void removeComposited(java.util.Set)</Attribute_Ref>
+					<Attribute_Ref>void addComposited(java.util.Set)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.List getSets()</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>void addComposited([Ljava.util.Set;)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>void addComposited(java.util.Set, java.util.Set)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>void setMutator(org.apache.commons.collections4.set.CompositeSet$SetMutator)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Set toSet()</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_14</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_2</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableNavigableSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet tailSet(java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object pollLast()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object pollFirst()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet headSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator descendingIterator()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet headSet(java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>static interface java.util.NavigableSet unmodifiableNavigableSet(java.util.NavigableSet)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet descendingSet()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object lower(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object floor(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object ceiling(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object last()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object first()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet subSet(java.lang.Object, boolean, java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object higher(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Comparator comparator()</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_11</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_1</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>static interface java.util.Set unmodifiableSet(java.util.Set)</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_14</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_6</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.ListOrderedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object remove(int)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface org.apache.commons.collections4.OrderedIterator iterator()</Attribute_Ref>
+					<Attribute_Ref>int indexOf(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>void add(int, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.ListOrderedSet listOrderedSet(java.util.List)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.ListOrderedSet listOrderedSet(java.util.Set, java.util.List)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.List asList()</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(int, java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.ListOrderedSet listOrderedSet(java.util.Set)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object get(int)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_14</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_5</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.MapBackedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.MapBackedSet mapBackedSet(java.util.Map)</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.MapBackedSet mapBackedSet(java.util.Map, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_14</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_4</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedNavigableSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet tailSet(java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object pollLast()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection$Builder builder(org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object pollFirst()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.PredicatedSortedSet predicatedSortedSet(java.util.SortedSet, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet headSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator descendingIterator()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet headSet(java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection predicatedCollection(java.util.Collection, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet descendingSet()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object lower(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection$Builder notNullBuilder()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object floor(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object ceiling(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.PredicatedSet predicatedSet(java.util.Set, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object last()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object first()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet subSet(java.lang.Object, boolean, java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object higher(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Comparator comparator()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.PredicatedNavigableSet predicatedNavigableSet(java.util.NavigableSet, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_11</Concept_Ref>
+					<Concept_Ref>Concept_Collections_9</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_3</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedNavigableSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet tailSet(java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object pollLast()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object pollFirst()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet headSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator descendingIterator()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet headSet(java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.TransformedCollection transformedCollection(java.util.Collection, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet descendingSet()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object lower(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.TransformedCollection transformingCollection(java.util.Collection, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object floor(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>static interface java.util.Set transformedSet(java.util.Set, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedSortedSet transformingSortedSet(java.util.SortedSet, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedNavigableSet transformingNavigableSet(java.util.NavigableSet, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object ceiling(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedSortedSet transformedSortedSet(java.util.SortedSet, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedSet transformingSet(java.util.Set, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedNavigableSet transformedNavigableSet(java.util.NavigableSet, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object last()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object first()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet subSet(java.lang.Object, boolean, java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object higher(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Comparator comparator()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_11</Concept_Ref>
+					<Concept_Ref>Concept_Collections_8</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_8</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedSortedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet headSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.TransformedCollection transformedCollection(java.util.Collection, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.TransformedCollection transformingCollection(java.util.Collection, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>static interface java.util.Set transformedSet(java.util.Set, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedSortedSet transformingSortedSet(java.util.SortedSet, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedSortedSet transformedSortedSet(java.util.SortedSet, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedSet transformingSet(java.util.Set, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object last()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object first()</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Comparator comparator()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_13</Concept_Ref>
+					<Concept_Ref>Concept_Collections_10</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_9</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedSortedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection$Builder builder(org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.PredicatedSortedSet predicatedSortedSet(java.util.SortedSet, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet headSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection predicatedCollection(java.util.Collection, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection$Builder notNullBuilder()</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.PredicatedSet predicatedSet(java.util.Set, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object last()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object first()</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Comparator comparator()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_13</Concept_Ref>
+					<Concept_Ref>Concept_Collections_12</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_10</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedSortedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.TransformedCollection transformingCollection(java.util.Collection, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static interface java.util.Set transformedSet(java.util.Set, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedSet transformingSet(java.util.Set, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.TransformedCollection transformedCollection(java.util.Collection, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_14</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_11</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableNavigableSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet tailSet(java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object pollLast()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object pollFirst()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet headSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator descendingIterator()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet headSet(java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet descendingSet()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object lower(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object floor(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object ceiling(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object last()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object first()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet subSet(java.lang.Object, boolean, java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object higher(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Comparator comparator()</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_13</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_12</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedSortedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection$Builder notNullBuilder()</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection$Builder builder(org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.PredicatedSet predicatedSet(java.util.Set, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection predicatedCollection(java.util.Collection, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_14</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_13</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedSortedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedSortedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableSortedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet headSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object last()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object first()</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Comparator comparator()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_14</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_14</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.CompositeSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.ListOrderedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.MapBackedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedSortedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedSortedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableSortedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_0</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableSortedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>static interface java.util.SortedSet unmodifiableSortedSet(java.util.SortedSet)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet headSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object last()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object first()</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Comparator comparator()</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_13</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+		</Lattice>
+	</Step >
+	<Step nb="1">
+		<Lattice numberObj="12" numberAtt="71" numberCpt="15" >
+			<Config algo="ares">
+			</Config>
+			<Name>Collections</Name>
+			<Object>org.apache.commons.collections4.set.CompositeSet</Object>
+			<Object>org.apache.commons.collections4.set.ListOrderedSet</Object>
+			<Object>org.apache.commons.collections4.set.MapBackedSet</Object>
+			<Object>org.apache.commons.collections4.set.PredicatedNavigableSet</Object>
+			<Object>org.apache.commons.collections4.set.PredicatedSortedSet</Object>
+			<Object>org.apache.commons.collections4.set.PredicatedSet</Object>
+			<Object>org.apache.commons.collections4.set.TransformedNavigableSet</Object>
+			<Object>org.apache.commons.collections4.set.TransformedSet</Object>
+			<Object>org.apache.commons.collections4.set.TransformedSortedSet</Object>
+			<Object>org.apache.commons.collections4.set.UnmodifiableNavigableSet</Object>
+			<Object>org.apache.commons.collections4.set.UnmodifiableSet</Object>
+			<Object>org.apache.commons.collections4.set.UnmodifiableSortedSet</Object>
+			<Attribute>void setMutator(org.apache.commons.collections4.set.CompositeSet$SetMutator)</Attribute>
+			<Attribute>void addComposited([Ljava.util.Set;)</Attribute>
+			<Attribute>void addComposited(java.util.Set, java.util.Set)</Attribute>
+			<Attribute>void addComposited(java.util.Set)</Attribute>
+			<Attribute>void removeComposited(java.util.Set)</Attribute>
+			<Attribute>interface java.util.Set toSet()</Attribute>
+			<Attribute>interface java.util.List getSets()</Attribute>
+			<Attribute>boolean add(java.lang.Object)</Attribute>
+			<Attribute>boolean remove(java.lang.Object)</Attribute>
+			<Attribute>void clear()</Attribute>
+			<Attribute>boolean isEmpty()</Attribute>
+			<Attribute>boolean contains(java.lang.Object)</Attribute>
+			<Attribute>int size()</Attribute>
+			<Attribute>class [Ljava.lang.Object; toArray()</Attribute>
+			<Attribute>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute>
+			<Attribute>interface java.util.Iterator iterator()</Attribute>
+			<Attribute>boolean addAll(java.util.Collection)</Attribute>
+			<Attribute>boolean containsAll(java.util.Collection)</Attribute>
+			<Attribute>boolean removeAll(java.util.Collection)</Attribute>
+			<Attribute>boolean retainAll(java.util.Collection)</Attribute>
+			<Attribute>default interface java.util.Spliterator spliterator()</Attribute>
+			<Attribute>default interface java.util.stream.Stream stream()</Attribute>
+			<Attribute>default boolean removeIf(java.util.function.Predicate)</Attribute>
+			<Attribute>default interface java.util.stream.Stream parallelStream()</Attribute>
+			<Attribute>default void forEach(java.util.function.Consumer)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.ListOrderedSet listOrderedSet(java.util.List)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.ListOrderedSet listOrderedSet(java.util.Set)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.ListOrderedSet listOrderedSet(java.util.Set, java.util.List)</Attribute>
+			<Attribute>void add(int, java.lang.Object)</Attribute>
+			<Attribute>class java.lang.Object remove(int)</Attribute>
+			<Attribute>class java.lang.Object get(int)</Attribute>
+			<Attribute>int indexOf(java.lang.Object)</Attribute>
+			<Attribute>interface org.apache.commons.collections4.OrderedIterator iterator()</Attribute>
+			<Attribute>boolean addAll(int, java.util.Collection)</Attribute>
+			<Attribute>interface java.util.List asList()</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.MapBackedSet mapBackedSet(java.util.Map)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.MapBackedSet mapBackedSet(java.util.Map, java.lang.Object)</Attribute>
+			<Attribute>class java.lang.Object pollFirst()</Attribute>
+			<Attribute>class java.lang.Object pollLast()</Attribute>
+			<Attribute>interface java.util.Iterator descendingIterator()</Attribute>
+			<Attribute>class java.lang.Object higher(java.lang.Object)</Attribute>
+			<Attribute>interface java.util.NavigableSet descendingSet()</Attribute>
+			<Attribute>interface java.util.NavigableSet subSet(java.lang.Object, boolean, java.lang.Object, boolean)</Attribute>
+			<Attribute>interface java.util.NavigableSet headSet(java.lang.Object, boolean)</Attribute>
+			<Attribute>interface java.util.NavigableSet tailSet(java.lang.Object, boolean)</Attribute>
+			<Attribute>class java.lang.Object lower(java.lang.Object)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.PredicatedNavigableSet predicatedNavigableSet(java.util.NavigableSet, org.apache.commons.collections4.Predicate)</Attribute>
+			<Attribute>class java.lang.Object ceiling(java.lang.Object)</Attribute>
+			<Attribute>class java.lang.Object floor(java.lang.Object)</Attribute>
+			<Attribute>class java.lang.Object last()</Attribute>
+			<Attribute>interface java.util.Comparator comparator()</Attribute>
+			<Attribute>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute>
+			<Attribute>interface java.util.SortedSet headSet(java.lang.Object)</Attribute>
+			<Attribute>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.PredicatedSortedSet predicatedSortedSet(java.util.SortedSet, org.apache.commons.collections4.Predicate)</Attribute>
+			<Attribute>class java.lang.Object first()</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.PredicatedSet predicatedSet(java.util.Set, org.apache.commons.collections4.Predicate)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.collection.PredicatedCollection$Builder builder(org.apache.commons.collections4.Predicate)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.collection.PredicatedCollection$Builder notNullBuilder()</Attribute>
+			<Attribute>static class org.apache.commons.collections4.collection.PredicatedCollection predicatedCollection(java.util.Collection, org.apache.commons.collections4.Predicate)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.TransformedNavigableSet transformingNavigableSet(java.util.NavigableSet, org.apache.commons.collections4.Transformer)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.TransformedNavigableSet transformedNavigableSet(java.util.NavigableSet, org.apache.commons.collections4.Transformer)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.TransformedSortedSet transformingSortedSet(java.util.SortedSet, org.apache.commons.collections4.Transformer)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.TransformedSortedSet transformedSortedSet(java.util.SortedSet, org.apache.commons.collections4.Transformer)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.set.TransformedSet transformingSet(java.util.Set, org.apache.commons.collections4.Transformer)</Attribute>
+			<Attribute>static interface java.util.Set transformedSet(java.util.Set, org.apache.commons.collections4.Transformer)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.collection.TransformedCollection transformingCollection(java.util.Collection, org.apache.commons.collections4.Transformer)</Attribute>
+			<Attribute>static class org.apache.commons.collections4.collection.TransformedCollection transformedCollection(java.util.Collection, org.apache.commons.collections4.Transformer)</Attribute>
+			<Attribute>static interface java.util.NavigableSet unmodifiableNavigableSet(java.util.NavigableSet)</Attribute>
+			<Attribute>static interface java.util.Set unmodifiableSet(java.util.Set)</Attribute>
+			<Attribute>static interface java.util.SortedSet unmodifiableSortedSet(java.util.SortedSet)</Attribute>
+			<Concept>
+				<ID>Concept_Collections_7</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.CompositeSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>void removeComposited(java.util.Set)</Attribute_Ref>
+					<Attribute_Ref>void addComposited(java.util.Set)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.List getSets()</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>void addComposited([Ljava.util.Set;)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>void addComposited(java.util.Set, java.util.Set)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>void setMutator(org.apache.commons.collections4.set.CompositeSet$SetMutator)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Set toSet()</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_14</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_6</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.ListOrderedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object remove(int)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface org.apache.commons.collections4.OrderedIterator iterator()</Attribute_Ref>
+					<Attribute_Ref>int indexOf(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>void add(int, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.ListOrderedSet listOrderedSet(java.util.List)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.ListOrderedSet listOrderedSet(java.util.Set, java.util.List)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.List asList()</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(int, java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.ListOrderedSet listOrderedSet(java.util.Set)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object get(int)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_14</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_5</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.MapBackedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.MapBackedSet mapBackedSet(java.util.Map)</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.MapBackedSet mapBackedSet(java.util.Map, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_14</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_4</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedNavigableSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet tailSet(java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object pollLast()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection$Builder builder(org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object pollFirst()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.PredicatedSortedSet predicatedSortedSet(java.util.SortedSet, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet headSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator descendingIterator()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet headSet(java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection predicatedCollection(java.util.Collection, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet descendingSet()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object lower(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection$Builder notNullBuilder()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object floor(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object ceiling(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.PredicatedSet predicatedSet(java.util.Set, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object last()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object first()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet subSet(java.lang.Object, boolean, java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object higher(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Comparator comparator()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.PredicatedNavigableSet predicatedNavigableSet(java.util.NavigableSet, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_11</Concept_Ref>
+					<Concept_Ref>Concept_Collections_9</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_3</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedNavigableSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet tailSet(java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object pollLast()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object pollFirst()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet headSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator descendingIterator()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet headSet(java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.TransformedCollection transformedCollection(java.util.Collection, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet descendingSet()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object lower(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.TransformedCollection transformingCollection(java.util.Collection, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object floor(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>static interface java.util.Set transformedSet(java.util.Set, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedSortedSet transformingSortedSet(java.util.SortedSet, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedNavigableSet transformingNavigableSet(java.util.NavigableSet, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object ceiling(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedSortedSet transformedSortedSet(java.util.SortedSet, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedSet transformingSet(java.util.Set, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedNavigableSet transformedNavigableSet(java.util.NavigableSet, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object last()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object first()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet subSet(java.lang.Object, boolean, java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object higher(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Comparator comparator()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_11</Concept_Ref>
+					<Concept_Ref>Concept_Collections_8</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_2</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableNavigableSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet tailSet(java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object pollLast()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object pollFirst()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet headSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator descendingIterator()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet headSet(java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>static interface java.util.NavigableSet unmodifiableNavigableSet(java.util.NavigableSet)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet descendingSet()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object lower(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object floor(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object ceiling(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object last()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object first()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet subSet(java.lang.Object, boolean, java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object higher(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Comparator comparator()</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_11</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_1</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>static interface java.util.Set unmodifiableSet(java.util.Set)</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_14</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_9</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedSortedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection$Builder builder(org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.PredicatedSortedSet predicatedSortedSet(java.util.SortedSet, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet headSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection predicatedCollection(java.util.Collection, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection$Builder notNullBuilder()</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.PredicatedSet predicatedSet(java.util.Set, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object last()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object first()</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Comparator comparator()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_13</Concept_Ref>
+					<Concept_Ref>Concept_Collections_12</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_8</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedSortedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet headSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.TransformedCollection transformedCollection(java.util.Collection, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.TransformedCollection transformingCollection(java.util.Collection, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>static interface java.util.Set transformedSet(java.util.Set, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedSortedSet transformingSortedSet(java.util.SortedSet, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedSortedSet transformedSortedSet(java.util.SortedSet, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedSet transformingSet(java.util.Set, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object last()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object first()</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Comparator comparator()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_13</Concept_Ref>
+					<Concept_Ref>Concept_Collections_10</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_11</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableNavigableSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet tailSet(java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object pollLast()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object pollFirst()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet headSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator descendingIterator()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet headSet(java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet descendingSet()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object lower(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object floor(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object ceiling(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object last()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object first()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.NavigableSet subSet(java.lang.Object, boolean, java.lang.Object, boolean)</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object higher(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Comparator comparator()</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_13</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_12</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedSortedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection$Builder notNullBuilder()</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection$Builder builder(org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.PredicatedSet predicatedSet(java.util.Set, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.PredicatedCollection predicatedCollection(java.util.Collection, org.apache.commons.collections4.Predicate)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_14</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_10</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedSortedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.TransformedCollection transformingCollection(java.util.Collection, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static interface java.util.Set transformedSet(java.util.Set, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.set.TransformedSet transformingSet(java.util.Set, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>static class org.apache.commons.collections4.collection.TransformedCollection transformedCollection(java.util.Collection, org.apache.commons.collections4.Transformer)</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_14</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_13</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedSortedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedSortedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableSortedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet headSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object last()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object first()</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Comparator comparator()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_14</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_14</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.CompositeSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.ListOrderedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.MapBackedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedSortedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.PredicatedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.TransformedSortedSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableNavigableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableSet</Object_Ref>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableSortedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Collections_0</ID>
+				<Extent>
+					<Object_Ref>org.apache.commons.collections4.set.UnmodifiableSortedSet</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>default void forEach(java.util.function.Consumer)</Attribute_Ref>
+					<Attribute_Ref>int size()</Attribute_Ref>
+					<Attribute_Ref>static interface java.util.SortedSet unmodifiableSortedSet(java.util.SortedSet)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet headSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean addAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean isEmpty()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet subSet(java.lang.Object, java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>void clear()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Iterator iterator()</Attribute_Ref>
+					<Attribute_Ref>interface java.util.SortedSet tailSet(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean retainAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>default boolean removeIf(java.util.function.Predicate)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream parallelStream()</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray([Ljava.lang.Object;)</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.Spliterator spliterator()</Attribute_Ref>
+					<Attribute_Ref>default interface java.util.stream.Stream stream()</Attribute_Ref>
+					<Attribute_Ref>boolean removeAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>boolean add(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>class [Ljava.lang.Object; toArray()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object last()</Attribute_Ref>
+					<Attribute_Ref>class java.lang.Object first()</Attribute_Ref>
+					<Attribute_Ref>boolean remove(java.lang.Object)</Attribute_Ref>
+					<Attribute_Ref>boolean containsAll(java.util.Collection)</Attribute_Ref>
+					<Attribute_Ref>interface java.util.Comparator comparator()</Attribute_Ref>
+					<Attribute_Ref>boolean contains(java.lang.Object)</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Collections_13</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+		</Lattice>
+	</Step >
+</RCAExplore_Document>
